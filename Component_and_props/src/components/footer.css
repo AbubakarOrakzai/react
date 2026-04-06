@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    margin-top:  30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:rgb(7, 122, 205);
+    padding: 1rem;
+    color: white;
+   border-radius: 10px;
+}
+.footer div{
+    padding:10px;
+    color: white;
+}
+.footer a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.footer a:hover {
+    color: yellow;
+}
