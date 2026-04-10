@@ -6,3 +6,8 @@ html,body{
   width: 100%;
   background-color: white
 }
+.parent{
+  margin:8px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -2,21 +2,20 @@ import React from 'react';
 import './card.css';
 import AbubakarOrakzai from '../assest/AbubakarOrakzai.jpg';
 
-function Card() {
+function Card({name, profession, description, image}) {
   return (
     <div>
       <div className="parent">
         <div className="card">
           <div className="top">
-            <img src={AbubakarOrakzai} alt="Profile" />
+            <img src={image} alt="Profile" />
           </div>
 
           <div className="center">
-            <h2>Abubakar Orakzai</h2>
-            <h2>Software Engineer</h2>
+            <h2>{name}</h2>
+            <h2>{profession}</h2>
             <p>
-              Experienced developer with a passion for creating modern and
-              user-friendly applications.
+              {description}
             </p>
           </div>
 

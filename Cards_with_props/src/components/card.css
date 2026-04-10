@@ -3,10 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.parent{
-    display: flex;
-    border: 2px solid red;
-}
+
 .card{
     height: 350px;
     width: 250px;
