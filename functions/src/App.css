@@ -1,0 +1,14 @@
+html,body{
+  margin:0;
+  padding:0;
+}
+button{
+  height: 200px;
+  width: 200px;
+  padding:10px;
+  font-size:20px;
+  background-color:blue;
+  color:white;
+  border:none;
+  border-radius:5px;
+}
