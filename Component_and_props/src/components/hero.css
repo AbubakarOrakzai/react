@@ -1,0 +1,41 @@
+.hero {
+  display: flex;          /* puts items side by side */
+  align-items: center;    /* vertical alignment */
+  justify-content: space-between;
+  gap: 4rem;
+  height: 100vh;          /* full screen (optional) */
+  padding: 2rem;
+  border: none;
+}
+
+/* LEFT SIDE (40%) */
+.description {
+  flex: 0 0 40%;
+}
+.description h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* RIGHT SIDE (60%) */
+.hero-img {
+  flex: 0 0 60%;
+}
+
+/* Make image fill its container */
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* important for proper scaling */
+  border-radius: 40px; /* optional styling */
+}
+.hero button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: rgb(7, 122, 205);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
