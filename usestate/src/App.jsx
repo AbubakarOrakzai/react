@@ -1,13 +1,10 @@
 import React from 'react'
-
-import Forms from './components/forms'
+import Binding from './components/binding'
 
 export default function App() {
   return (
     <div>
-        
-         <Forms />
-        
+         <Binding />
     </div>
   )
 }
