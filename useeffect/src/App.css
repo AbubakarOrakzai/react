@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: blueviolet;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   gap: 5px;
+}
+ button{
+  height: 200px;
+  width: 200px;
+  border:4px white;
+  padding: 30px;
+}
+.btn1 :hover{
+  background-color: red;
+}
+.btn{
+  background-color:blue;
+height: 200px;
+  width: 200px;
+  border:4px white;
+  padding: 30px;
+}

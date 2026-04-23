@@ -1,0 +1,135 @@
+.admission {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.admission-hero {
+  background-color: #0a2240;
+  color: white;
+  text-align: center;
+  padding: 60px 2rem;
+}
+
+.admission-hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.admission-hero p {
+  font-size: 1rem;
+  color: #a0b8d0;
+}
+
+.admission-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.admission-section {
+  margin-bottom: 3rem;
+}
+
+.admission-section h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0a2240;
+  text-transform: uppercase;
+  border-left: 5px solid #f5a623;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.criteria-list {
+  list-style: none;
+  padding: 0;
+}
+
+.criteria-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+  color: #444;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.check {
+  color: #f5a623;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 1px;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.step-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background: #f4f6f9;
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+.step-number {
+  background-color: #0a2240;
+  color: #f5a623;
+  font-weight: 800;
+  font-size: 1.1rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0a2240;
+  margin-bottom: 0.3rem;
+}
+
+.step-info p {
+  font-size: 0.88rem;
+  color: #666;
+}
+
+.dates-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dates-table th {
+  background-color: #0a2240;
+  color: white;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.dates-table td {
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.dates-table tr:nth-child(even) {
+  background-color: #f4f6f9;
+}
+
+.dates-table tr:hover {
+  background-color: #fef3e0;
+}

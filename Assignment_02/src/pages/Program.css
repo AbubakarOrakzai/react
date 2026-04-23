@@ -1,0 +1,65 @@
+/* Program.css */
+
+/* Main container styling */
+.programs-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding: 2rem 0;
+}
+
+/* Row container for cards - this makes them display horizontally */
+.cards-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Responsive Design */
+/* Tablet view - 2 cards per row */
+@media screen and (max-width: 1024px) {
+  .cards-row {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+/* Mobile view - stack cards vertically */
+@media screen and (max-width: 768px) {
+  .cards-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .cards-row {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Optional: Add animation when cards load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cards-row > * {
+  animation: fadeIn 0.5s ease-out forwards;
+}
