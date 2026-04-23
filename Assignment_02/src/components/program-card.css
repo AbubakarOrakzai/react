@@ -1,0 +1,90 @@
+/* Program-card.css */
+
+/* Card container styling */
+.card-pro {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-top: 4px solid #f5a623;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.card-pro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-top-color: #ff9800;
+}
+
+/* Title styling */
+.card-pro h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0a2240;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f5a623;
+  display: inline-block;
+}
+
+/* Common styling for all h3 elements */
+.card-pro h3 {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.6rem 0;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Add icons to each field */
+.card-pro h3:nth-of-type(1)::before {
+  content: "🎓 ";
+  margin-right: 5px;
+}
+
+.card-pro h3:nth-of-type(2)::before {
+  content: "📋 ";
+  margin-right: 5px;
+}
+
+.card-pro h3:nth-of-type(3)::before {
+  content: "⏱️ ";
+  margin-right: 5px;
+}
+
+/* Optional: Remove icons if you don't want them */
+/* Uncomment below to remove icons */
+/*
+.card-pro h3::before {
+  content: none !important;
+}
+*/
+
+/* Responsive card sizing */
+@media screen and (max-width: 768px) {
+  .card-pro {
+    width: 90%;
+    max-width: 320px;
+    padding: 1.2rem;
+  }
+  
+  .card-pro h2 {
+    font-size: 1rem;
+  }
+  
+  .card-pro h3 {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-pro {
+    width: 95%;
+    padding: 1rem;
+  }
+}

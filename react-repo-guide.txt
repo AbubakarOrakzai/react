@@ -14,3 +14,12 @@
              props_drilling      Contain the concept of the props how the parent functionality is use in the child component 
               
              React-Router        How to connect pages throught the react-router 
+
+             local_storage        contect of the local storage in the browers
+
+
+
+
+             -API       Jason place holder = fake api 
+
+             When  the data is moving from the one place to another it is moving in the Jason formate JavaScript Object nodatation 

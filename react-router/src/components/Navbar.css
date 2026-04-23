@@ -1,0 +1,8 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: linear-gradient(lightblue, darkblue);
+     color: black;
+}

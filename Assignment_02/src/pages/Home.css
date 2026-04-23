@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;500&display=swap');
+
+.home {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.hero {
+  background-color: #0a2240;
+  color: white;
+  text-align: center;
+  padding: 100px 2rem;
+}
+
+.hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #a0b8d0;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  background-color: #f5a623;
+  color: #0a2240;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: #e09415;
+}
+
+.intro {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.intro h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0a2240;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.highlights {
+  background-color: #f4f6f9;
+  padding: 60px 2rem;
+  text-align: center;
+}
+
+.highlights h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0a2240;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.highlights-sub {
+  color: #777;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.program-card {
+  background-color: white;
+  border: 1px solid #dde3ec;
+  border-top: 4px solid #f5a623;
+  border-radius: 6px;
+  padding: 1.5rem;
+  width: 220px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.program-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0a2240;
+  margin-bottom: 0.5rem;
+}
+
+.program-card p {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.program-card a {
+  font-size: 0.85rem;
+  color: #f5a623;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.program-card a:hover {
+  text-decoration: underline;
+}
