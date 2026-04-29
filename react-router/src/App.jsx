@@ -1,20 +1,17 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
+import Contact from './components/contact'  // ✅ Capital C
 import Navbar from './components/Navbar'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 export default function App() {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: (
-        <>
-          <Navbar />
-          <Home />
-        </>
-      )
-    }
-  ])
-  
-  return <RouterProvider router={router} />
+  return (
+    <div>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/Contact' element={<Contact/>}/>  {/* ✅ Capital C */}
+      </Routes>
+    </div>
+  )
 }
