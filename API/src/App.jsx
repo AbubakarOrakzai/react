@@ -1,28 +1,58 @@
 import React from 'react'
 import axios from 'axios'
+import { useState } from 'react'
 export default function App() {
-  
-   const getData= async()=>{
-   
-    {/*
-        ====== This is one way of API calling trhough the fetch
 
-      const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-      const data = response.json
-      console.log(data)
-  */}
-
-  {/* The is another way axios and it better dealing with errors so we will using this onword*/}
-     const [data, setdata] = useState([])
-     const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1')
-     setdata(response.data)
-       
-
-    }
+  /*
+    =====================================================
+    📌 Function: getData
+    📌 Purpose: Fetch data from API using Axios
+    =====================================================
+  */
  
+    /* The below code is to get the image data*/
+
+    
+     const [data, setdata] = useState([])
+
+   const getData = async()=>{
+      
+    const response = await axios.get("https://picsum.photos/v2/list")
+
+      
+    setdata(response.data)
+    console.log(data)
+   }
+
+  /*
+    =====================================================
+    📌 Alternative Method (Fetch API)
+    =====================================================
+    
+    const getDataUsingFetch = async () => {
+      try {
+        const response = await fetch("https://picsum.photos/v2/list")
+
+        // Convert response to JSON manually
+        const data = await response.json()
+
+        console.log(data)
+
+      } catch (error) {
+        console.error("Error fetching data:", error)
+      }
+    }
+  */
+
   return (
     <div>
-                <button onClick={getData}>Get data</button>
+      {/* Button to trigger API call */}
+      <button onClick={getData}>Get Data</button>
+      <div> 
+        {data.map(function(elem,index){
+               return <h3>hello {elem.author} {index}</h3>
+        })}
+      </div>
     </div>
   )
 }
